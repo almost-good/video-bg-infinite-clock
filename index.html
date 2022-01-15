@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <title>Infinite Clock</title>
+</head>
+
+<body>
+    <section class="showcase">
+        <div class="menu">
+            <i class="fas fa-angle-double-left toggle"></i>
+        </div>
+
+        <video class="bg" src="clock.mp4" autoplay loop muted></video>
+
+        <div class="overlay"></div>
+    </section>
+
+    <section class="showcase2">
+        <div class="menu">
+            <i class="fas fa-angle-double-left toggle2"></i>
+        </div>
+
+        <video class="bg" src="clock.mp4" autoplay loop muted></video>
+        <div class="overlay"></div>
+    </section>
+
+    <section class="showcase3">
+        <div class="menu">
+            <i class="fas fa-angle-double-left toggle3"></i>
+        </div>
+
+        <video class="bg" src="clock.mp4" autoplay loop muted></video>
+        <div class="overlay"></div>
+    </section>
+
+    <section class="showcase4">
+        <video class="bg" src="clock.mp4" autoplay loop muted></video>
+        <div class="overlay"></div>
+    </section>
+
+    <script>
+        const menuToggle = document.querySelector('.toggle')
+        const menuToggle2 = document.querySelector('.toggle2')
+        const menuToggle3 = document.querySelector('.toggle3')
+        const showcase = document.querySelector('.showcase')
+        const showcase2 = document.querySelector('.showcase2')
+        const showcase3 = document.querySelector('.showcase3')
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('fa-angle-double-right')
+            showcase.classList.toggle('active')
+        })
+        menuToggle2.addEventListener('click', () => {
+            menuToggle2.classList.toggle('fa-angle-double-right')
+            showcase2.classList.toggle('active')
+        })
+        menuToggle3.addEventListener('click', () => {
+            menuToggle3.classList.toggle('fa-angle-double-right')
+            showcase3.classList.toggle('active')
+        })
+    </script>
+</body>
+
+</html>
